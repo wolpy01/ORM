@@ -24,7 +24,7 @@ private:
     void *GenerateModelManager();
     void *GenerateModels();
     void *FillModels();
-}
+};
 
 class ORM
 {
