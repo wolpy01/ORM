@@ -1,2 +1,2 @@
-INSERT INTO table
-VALUES object;
+UPDATE table
+SET object;
