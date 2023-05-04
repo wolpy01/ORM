@@ -1,2 +1,5 @@
-add_library(DatabaseMOCK src/DatabaseMOCK.cpp)
-target_include_directories(DatabaseMOCK PUBLIC include)
+add_executable(utils_test src/DatabaseMOCK.cpp)
+target_link_libraries(utils_test lib/DatabaseMOCK GTest::gtest_main)
+target_link_libraries(utils_test lib/ORM GTest::gtest_main)
+
+add_test(utils_test utils_test)

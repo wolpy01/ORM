@@ -1,5 +1,5 @@
 template <typename Model>
-class IModelManager
+class IModelManager //абстрактный класс, от которого будут наследоваться все остальные ModelManager'ы
 {
 public:
     virtual Model All() = 0;

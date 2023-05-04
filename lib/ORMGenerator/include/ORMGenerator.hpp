@@ -1,7 +1,8 @@
 #pragma once
 #include <iostream>
 
-class ORMGenerator
+//для этого класса тестов нет, т.к. он довольно абстрактный и его сложно проверить без совместной проверки работы в бэкендом
+class ORMGenerator //класс, который генерирует фильтры, ModeManager'ы модели для бэкенда
 {
 public:
     void Generate();
