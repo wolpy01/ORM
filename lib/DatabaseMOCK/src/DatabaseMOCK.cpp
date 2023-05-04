@@ -6,7 +6,7 @@
 
 const std::string DIRECTORY_PATH = "../data/request.txt";
 
-void DatabaseMOCK::execute(std::string request)
+std::string DatabaseMOCK::execute(std::string &&request)
 {
     std::ifstream requestSQL(DIRECTORY_PATH);
 
@@ -24,7 +24,7 @@ void DatabaseMOCK::execute(std::string request)
     }
     requestSQL.close();
     if (request == request_text)
-        std::cout << "The request is correct!" << std::endl;
+        return "The request is correct!";
     else
-        std::cout << "The request isn't correct!" << std::endl;
+        return "The request isn't correct!";
 }

@@ -5,5 +5,5 @@
 class DatabaseMOCK
 {
 public:
-    static void execute(std::string request);
+    static std::string execute(std::string &&request);
 };
