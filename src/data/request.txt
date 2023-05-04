@@ -1,0 +1,2 @@
+SELECT *
+FROM table WHERE object_id = 1;
