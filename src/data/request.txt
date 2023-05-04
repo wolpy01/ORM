@@ -1,2 +1,2 @@
-SELECT *
-FROM table WHERE object_id = 1;
+UPDATE table
+SET object;
