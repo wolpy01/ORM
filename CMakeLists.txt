@@ -8,12 +8,7 @@ enable_testing()
 find_package(GTest REQUIRED)
 #include(GoogleTest)
 
-add_subdirectory(lib/DatabaseMOCK)
 add_subdirectory(lib/ORM)
-add_subdirectory(lib/ORMGenerator)
-add_subdirectory(lib/tests)
 
 add_executable(ORM_project_part src/main.cpp)
-target_link_libraries(ORM_project_part DatabaseMOCK)
 target_link_libraries(ORM_project_part ORM)
-target_link_libraries(ORM_project_part ORMGenerator)
